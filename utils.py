@@ -7,6 +7,12 @@ def number_to_algebraic_notation(number):
     algebraic_notation = chr(collumn + ord('a')) + str(row+1) 
     return algebraic_notation
 
+def algebraic_to_number_notation(algebraic):
+    ch = algebraic[0]
+    n = int(algebraic[1])
+
+    return ord(ch) - ord('a') + 8*(n-1)
+
 def reverse_turn(turn):
     if turn == 'w': return 'b'
     return 'w'
