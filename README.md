@@ -1,1 +1,1 @@
-chess ai v2
+This is the repository for a chess bot that i'm creating. The bot is written in c++, to have the maximum efficiency, while the chess game was written in python, for a nice and easy interface. This is the second version that i'm making, i dropped the first one because the code was to ugly and i didn't wanted to refactor it all. I hope that any of you reading like it, and I'm open to suggestions. 
