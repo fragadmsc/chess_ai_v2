@@ -18,7 +18,7 @@ class chessboard_class:
 
     __slots__ = ('board', 'turn', 'castle_rights', 'en_passant_square', 'move_count', 'halfmove_clock', 'move_list')
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.board = [['-' for i in range(BOARD_SIZE)] for i in range(BOARD_SIZE)]
         self.turn  = WHITE
         #im using a bitmask for representing castle rights. the order is, respectively white kingside, white queenside, black kingside, black queenside (as in FEN notation)
@@ -33,7 +33,7 @@ class chessboard_class:
 
 
 
-    def export_FEN(self):
+    def export_FEN(self) -> str:
         """
         exports the board in a FEN notation, returning the string referent to the board
         """
@@ -85,7 +85,7 @@ class chessboard_class:
         return fen
 
     
-    def read_FEN(self, fen_notation):
+    def read_FEN(self, fen_notation: str) -> None:
         """
         reads a string in a FEN notation and puts it in the self.board
         """
