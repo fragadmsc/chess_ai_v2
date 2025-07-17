@@ -37,4 +37,5 @@ def draw_board(chessboard: chessboard_class, screen: pygame.surface.Surface) -> 
                 rect_position = pygame.Rect(j*SQUARE_SIZE, (7-i)*SQUARE_SIZE, 
                                             SQUARE_SIZE, SQUARE_SIZE)
                 pygame.Surface.blit(screen, scaled_image, rect_position)
-            pygame.display.flip()
+    
+    pygame.display.flip()

@@ -14,4 +14,3 @@ if __name__ == "__main__":
     while (True): 
         #update_board(main_board)
         draw_board(main_board, screen) 
-        a = input()
