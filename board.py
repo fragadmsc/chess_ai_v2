@@ -14,7 +14,7 @@ BISHOP = 'B'
 PAWN   = 'P'
 
 
-class chessboard_class:
+class Chessboard:
 
     __slots__ = ('board', 'turn', 'castle_rights', 'en_passant_square', 'move_count', 'halfmove_clock', 'move_list')
 
